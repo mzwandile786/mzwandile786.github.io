@@ -1,138 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mzwandile Byron Mngadi | Software Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mzwandile Byron Mngadi | Software Developer</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        body {
-            background: #0f172a;
-            color: #f1f5f9;
-            line-height: 1.6;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
 
-        header {
-            background: #0ea5e9;
-            padding: 40px 20px;
-            text-align: center;
-        }
+body{
+    background:#0f172a;
+    color:#f8fafc;
+}
 
-        header h1 {
-            font-size: 36px;
-        }
+nav{
+    position:fixed;
+    width:100%;
+    background:#0f172a;
+    padding:15px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+    z-index:1000;
+}
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
+nav h2{
+    color:#38bdf8;
+}
 
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+nav ul{
+    list-style:none;
+    display:flex;
+}
 
-        h2 {
-            margin-bottom: 20px;
-            color: #38bdf8;
-            border-bottom: 2px solid #38bdf8;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
+nav ul li{
+    margin-left:25px;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
+nav ul li a{
+    color:#f8fafc;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-            background: #334155;
-        }
+nav ul li a:hover{
+    color:#38bdf8;
+}
 
-        .skills span {
-            display: inline-block;
-            background: #0ea5e9;
-            padding: 8px 15px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
+section{
+    padding:100px 10%;
+}
 
-        footer {
-            background: #0ea5e9;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #000;
-            font-weight: bold;
-        }
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
 
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
 
-        @media(max-width: 768px) {
-            header h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    max-width:600px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    margin:20px 0;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:#334155;
+}
+
+.skills span{
+    display:inline-block;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:500;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#1e293b;
+    margin-top:50px;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 1s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Mzwandile Byron Mngadi</h1>
-    <p>Software Developer | ASP.NET | Angular | SQL Server | Azure Certified</p>
-</header>
+<nav>
+    <h2>MZM</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<section>
+<section class="hero">
+    <h1>Hi, I'm <span>Mzwandile Mngadi</span></h1>
+    <p>
+        Azure Certified Software Developer specializing in ASP.NET MVC,
+        Angular, SQL Server, and scalable web application development.
+        Passionate about building real-world solutions.
+    </p>
+    <a href="MZWANDILE BYRON MNGADI CV.docx" class="btn" download>Download CV</a>
+</section>
+
+<section id="about" class="fade">
     <h2>About Me</h2>
     <div class="card">
         <p>
-            I am a passionate Software Developer based in Durban, South Africa.
-            I hold a Diploma and Advanced Diploma in Information and Communication Technology
-            from Durban University of Technology.
-            I specialize in building scalable web applications using C#, ASP.NET MVC,
-            Angular, and SQL Server.
+            I hold a Diploma and Advanced Diploma in ICT from Durban University of Technology.
+            I build secure, scalable web applications using C#, ASP.NET MVC, ASP.NET Core API,
+            Angular, and SQL Server. I am Microsoft Azure certified (AZ-900 & AI-900).
         </p>
     </div>
 </section>
 
-<section>
+<section id="education" class="fade">
     <h2>Education</h2>
     <div class="card">
         <h3>Advanced Diploma in ICT</h3>
         <p>Durban University of Technology (2024)</p>
     </div>
-
     <div class="card">
         <h3>Diploma in ICT</h3>
         <p>Durban University of Technology (2020–2023)</p>
     </div>
 </section>
 
-<section>
-    <h2>Certifications</h2>
-    <div class="card">
-        <p>Microsoft Azure Fundamentals (AZ-900)</p>
-        <p>Microsoft Azure AI Fundamentals (AI-900)</p>
-    </div>
-</section>
-
-<section>
+<section id="skills" class="fade">
     <h2>Technical Skills</h2>
     <div class="skills">
         <span>C#</span>
@@ -140,55 +209,62 @@
         <span>ASP.NET Core API</span>
         <span>Angular</span>
         <span>SQL Server</span>
+        <span>JavaScript</span>
         <span>HTML</span>
         <span>CSS</span>
-        <span>JavaScript</span>
         <span>Azure</span>
         <span>Git</span>
     </div>
 </section>
 
-<section>
+<section id="projects" class="fade">
     <h2>Projects</h2>
 
     <div class="card">
         <h3>Student Attendance Tracking System</h3>
-        <p>
-            Web-based system for real-time attendance tracking using ASP.NET MVC,
-            QR codes, and email notifications for parents and administrators.
-        </p>
+        <p>Real-time QR-based attendance system with email notifications using ASP.NET MVC.</p>
     </div>
 
     <div class="card">
         <h3>Wig eCommerce System</h3>
-        <p>
-            Full-featured eCommerce platform with user roles, shopping cart,
-            checkout system, and product management using ASP.NET MVC 5.
-        </p>
+        <p>Full-featured eCommerce platform with cart, checkout, roles and admin dashboard.</p>
     </div>
 
     <div class="card">
         <h3>Car Wash Loyalty App</h3>
-        <p>
-            MVC application where customers earn points per wash
-            and redeem discounts.
-        </p>
+        <p>Points-based loyalty system built with ASP.NET MVC and SQL Server.</p>
     </div>
 </section>
 
-<section>
+<section id="contact" class="fade">
     <h2>Contact</h2>
     <div class="card">
         <p><strong>Phone:</strong> +27 79 721 6217</p>
         <p><strong>Email:</strong> mzwamngadi786@gmail.com</p>
         <p><strong>Location:</strong> Durban, South Africa</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/mzwandile786" target="_blank">github.com/mzwandile786</a></p>
+        <p><strong>GitHub:</strong> github.com/mzwandile786</p>
     </div>
 </section>
 
 <footer>
     © 2026 Mzwandile Byron Mngadi | Software Developer
 </footer>
+
+<script>
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.8;
+
+    faders.forEach(fade => {
+        const boxTop = fade.getBoundingClientRect().top;
+
+        if(boxTop < triggerBottom){
+            fade.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
