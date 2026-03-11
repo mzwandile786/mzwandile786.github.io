@@ -1,23 +1,22 @@
 👨‍💻 Mzwandile Byron Mngadi – Developer Portfolio
 
-
 Welcome to my personal developer portfolio website.
-This portfolio highlights my skills, education, and software development projects as a Full Stack Developer.
 
-The website is designed to present my technical abilities and showcase real-world applications I have developed using modern web technologies.
+This portfolio showcases my skills, education, and software development projects as a Full Stack Developer. It is designed to demonstrate my ability to build modern, scalable, and secure web applications.
 
 🌐 Live Portfolio
 
-🔗 View my portfolio here
+You can view my portfolio here:
 
-👉 https://mzwandile786.github.io
+🔗 https://mzwandile786.github.io
 
 📌 About the Portfolio
 
-This is a single-page responsive portfolio website built using HTML, CSS, and JavaScript.
-It features a modern dark theme UI, smooth navigation, and scroll animations to create a professional developer profile.
+This portfolio is a single-page responsive website built with HTML, CSS, and JavaScript.
 
-The portfolio includes sections such as:
+It uses a modern dark theme, smooth navigation, and scroll animations to create a professional user experience.
+
+Sections included in the portfolio
 
 👋 Introduction / Hero Section
 
@@ -27,33 +26,38 @@ The portfolio includes sections such as:
 
 💻 Technical Skills
 
-📂 Project Showcase
+📂 Projects
 
 📞 Contact Information
 
 🛠️ Technologies Used
-Technology	Purpose
-HTML5	Structure of the website
+Technology	Description
+HTML5	Website structure
 CSS3	Styling and layout
-JavaScript	Scroll animations and interactivity
+JavaScript	Interactivity and scroll animations
 Google Fonts	Typography
 Git & GitHub	Version control
 GitHub Pages	Website hosting
-✨ Features
+✨ Key Features
 
-✔ Responsive design (Desktop & Mobile)
+✔ Responsive design (works on desktop and mobile)
+
 ✔ Smooth navigation menu
+
 ✔ Scroll reveal animations
+
 ✔ Project showcase with GitHub links
+
 ✔ Downloadable CV
+
 ✔ Clean and modern UI design
 
-📂 Projects Featured
+📂 Featured Projects
 🖨️ Company Printers Management System
 
-A web application that allows organizations to manage printers, users, and job designations.
+A web application used to manage printers, users, and employee designations in an organization.
 
-Technologies Used
+Technologies
 
 ASP.NET WebForms
 
@@ -66,9 +70,9 @@ https://github.com/mzwandile786/CompanyPrinters
 
 🔌 Printers API
 
-A RESTful API built using ASP.NET Core Web API that manages printer-related data such as printers, users, and designations.
+A RESTful Web API built with ASP.NET Core that manages printers, users, and designations.
 
-Technologies Used
+Technologies
 
 ASP.NET Core Web API
 
@@ -81,9 +85,9 @@ https://github.com/mzwandile786/Printers.api
 
 🖥️ Angular Printer Management System
 
-A modern web application built with Angular and ASP.NET Core Web API that allows organizations to manage printers and users.
+A modern application built using Angular and ASP.NET Core Web API to manage printers and users.
 
-Technologies Used
+Technologies
 
 Angular
 
@@ -105,14 +109,6 @@ Diploma in Information and Communication Technology
 Durban University of Technology – 2020 – 2023
 
 💡 Technical Skills
-
-Programming Languages
-
-C#
-
-JavaScript
-
-SQL
 
 Frontend
 
@@ -142,7 +138,6 @@ GitHub
 
 Visual Studio
 
-Azure
 
 📞 Contact
 
@@ -151,5 +146,5 @@ Azure
 📱 Phone: +27 79 721 6217
 📍 Location: Durban, South Africa
 
-GitHub:
+🔗 GitHub:
 https://github.com/mzwandile786
